@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Login & Sign Up Form</title>
+   </head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <body>
+      <div class="container">
+         <div class="wrapper">
+            <div class="btn-container">
+               <div id="btn"></div>
+               <button type="btn" class="toggle-btn" onclick="login()">Log In</button>
+               <button type="btn" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+               <a href="#"><img src="facebook.png" alt="facebook-icon"></a>
+               <a href="#"><img src="twitter.png" alt="twitter-icon"></a>
+               <a href="#"><img src="google.png" alt="google-icon"></a>			
+            </div>
+            <form id="login" class="form-group">
+               <input type="text" name="username" class="form-control" placeholder="Username" required>
+               <input type="password" name="password" class="form-control" placeholder="Password" required>
+               <input type="checkbox" class="check-box" required><span>Remember Me</span>
+               <button type="submit" class="submit-btn">Login</button>	
+            </form>
+            <form id="signup" class="form-group">
+               <input type="text" name="username" class="form-control" placeholder="Username" required>
+               <input type="email" name="email" class="form-control" placeholder="Email" required>
+               <input type="password" name="password" class="form-control" placeholder="Password" required>
+               <input type="checkbox" class="check-box" required><span>I agree to the Terms & Conditions</span>
+               <button type="submit" class="submit-btn">Register</button>	
+            </form>
+         </div>
+      </div>
+      <script>
+         var x = document.getElementById("login");	
+         var y = document.getElementById("signup");
+         var z = document.getElementById("btn");
+         
+         function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+         }  
+         function signup() {
+         	x.style.left = "-400px";
+         	y.style.left = "50px";
+         	z.style.left = "110px";
+         }         	        
+      </script>
+   </body>
+</html>
